@@ -2,23 +2,12 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-
-    background-color: aquamarine;
 }
 
 
-#container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#test {
-    width: 500px;
-    height: 500px;
+.header {
+    width: 100vw;
+    height: 70px;
 
-    background-color: orange;
-    color: green;
-    font-size: x-large;
-
-    box-shadow: 0 0 35px 40px;
+    background-color: aqua;
 }
