@@ -15,9 +15,42 @@
 </head>
 <body>
     <header class="header">
-        <div id="logo-name"></div>
-        <div id="header-btns"></div>
+        <div id="logo-name">
+            <img src="../assets/images/WallSpace-Logo-Resized.png" alt="Didn't load logo">
+            <p>Your Space. Your Wall.</p>
+        </div>
+        <div id="header-btns">
+            <button>Home</button>
+            <button>Chat</button>
+            <button>Groups</button>
+        </div>
     </header>
+
+    <main>
+        <div id="groups-list">
+            <div id="left-container">
+                <div id="group-and-btn-container">
+                    <p>Groups</p>
+                    <button id="new-group-btn">+</button>
+                </div>
+                <div id="searchbar-container">
+                    <input type="text" id="search-group-input" placeholder="Search for group...">
+                </div>    
+            </div>
+            <div id="group-list-container">
+                <!-- not entirely sure just yet how to create the list of things
+                Might even be buttons actually ???? -->
+                <p class="groups">Mandag Hygge</p>
+                <p class="groups">Familie</p>
+                <p class="groups">Party when ??</p>
+                <p class="groups">Fødselsdag for mormor</p>
+            </div>            
+        </div>
+
+        <div id="chat"></div>
+
+        <div id="group-info"></div>
+    </main>
 
     <script src="js/script.js"></script>
 </body>

@@ -2,12 +2,161 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    /* change the font */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-
+/* Header styling */ 
 .header {
     width: 100vw;
     height: 70px;
 
-    background-color: aqua;
+    /* this is the color of the logo #2a5797 */
+    background-color: #2a5797;
+
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+}
+
+/* Buttons in the header */
+#header-btns {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+    gap: 25px;
+    padding: 0 75px 0 0;
+    width: 50%;
+}
+#header-btns > button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 0 0 10px black;
+}
+
+/* Logo and name in the header*/
+#logo-name {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    gap: 7.5%;
+    width: 50%;
+    padding: 0 0 0 1%;
+}
+#logo-name > img {
+    width: 155px;
+}
+#logo-name > p {
+    font-size: 20px;
+    color: white;
+}
+
+
+
+/* Main styling */
+main {
+    width: 100dvw;
+    height: calc(100vh - 70px);
+    
+    display: flex;
+}
+
+
+/* Main groups list styling */
+#groups-list {
+    width: 25%;
+    height: 100%;
+
+    border-right: 1.5px solid black;
+    /* color for visualize size of container */
+    /* background-color: rgba(249, 160, 145, 0.8); */
+}
+#left-container {
+    width: 100%;
+    height: 10%;
+}
+
+/* Styling for the name and button */
+#group-and-btn-container {
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#group-and-btn-container > p {
+    width: 25%;
+    margin: 0 0 0 2.5%;
+    font-size: 25px;
+}
+#new-group-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    margin: 2.5%;
+
+    font-size: 20px;
+}
+
+/* Styling for the groups searchbar */
+#searchbar-container {
+    width: 100%;
+    height: 50%;
+}
+#search-group-input {
+    height: 30px;
+    width: 95%;
+
+    border-radius: 10px;
+
+    background-color: rgb(218, 218, 218);
+
+    margin: 0 0 0 2.5%;
+    padding: 0 0 0 2.5%;
+}
+
+
+/* List for all the groups */
+#group-list-container {
+    display: flex;
+    flex-direction: column;
+}
+.groups {
+    width: 95%;
+
+    margin: 0.2% 0 0 2.5%;
+    border: 2px solid black;
+    border-radius: 10px;
+
+    font-size: 175%;
+}
+
+
+/* Main chat styling */
+#chat {
+    width: 50%;
+    height: 100%;
+
+
+    /* color for visualize size of container */
+    /* background-color: rgba(249, 145, 246, 0.8); */
+}
+
+/* Main group info styling */
+#group-info {
+    width: 25%;
+    height: 100%;
+
+    /* color for visualize size of container */
+    /*background-color: rgba(146, 249, 145, 0.8);*/
 }
