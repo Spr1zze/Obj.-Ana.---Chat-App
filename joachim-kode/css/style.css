@@ -2,10 +2,13 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    overflow: hidden;
     /* change the font */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+*::-webkit-scrollbar {
+    display: none;
+}
 /* Header styling */ 
 .header {
     width: 100vw;
@@ -13,6 +16,7 @@
 
     /* this is the color of the logo #2a5797 */
     background-color: #2a5797;
+    border-bottom: 1px solid black;
 
     position: sticky;
     top: 0;
@@ -60,7 +64,6 @@
 }
 
 
-
 /* Main styling */
 main {
     width: 100dvw;
@@ -72,12 +75,10 @@ main {
 
 /* Main groups list styling */
 #groups-list {
-    width: 25%;
+    width: 20%;
     height: 100%;
 
     border-right: 1.5px solid black;
-    /* color for visualize size of container */
-    /* background-color: rgba(249, 160, 145, 0.8); */
 }
 #left-container {
     width: 100%;
@@ -118,11 +119,15 @@ main {
     width: 95%;
 
     border-radius: 10px;
+    border: 1px solid black;
 
     background-color: rgb(218, 218, 218);
+    
+    margin: 0 1% 0 2.5%;
+    padding: 1.5% 0 0 1.5%;
 
-    margin: 0 0 0 2.5%;
-    padding: 0 0 0 2.5%;
+    /* remember to do js for dynamically resize ?? */
+    resize: none;
 }
 
 
@@ -141,22 +146,129 @@ main {
     font-size: 175%;
 }
 
+/* Tag in bottom of groups */
+#bottom-tag {
+    position: fixed;
+    bottom: 0;
+    left: 1.8%;
+}
+
 
 /* Main chat styling */
+/* chat header style */
 #chat {
-    width: 50%;
+    width: 60%;
     height: 100%;
 
-
-    /* color for visualize size of container */
-    /* background-color: rgba(249, 145, 246, 0.8); */
+    border-right: 1px solid black;
 }
+#chat-group-name {
+    width: 100%;
+    height: 10%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 5%;
+    border-bottom: 1px solid black;
+}
+#group-title-pic {
+    width: 7.5%;
+    height: 90%;
+    
+    margin-left: 2.5%;
+
+    border-radius: 50%;
+    border: 2px solid black;
+}
+#group-title-pic > img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+}
+#chat-group-name > p {
+    font-size: 25px;
+}
+
+/* the chat room it self */
+#chat-room {
+    width: 100%;
+    height: 85%;
+
+    border-bottom: 1px solid black;
+}
+
+/*chat box footer with input */
+#chat-text-input-container {
+    width: 100%;
+    height: 5%;
+
+    position: relative;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#chat-message-box {
+    height: 75%;
+    width: 95%;
+
+    border-radius: 10px;
+    border: 1px solid black;
+
+    margin: 0 1% 0 2.5%;
+    padding: 0.5% 0 0 0.5%;
+
+    /* remember to do js for dynamically resize ?? */
+    resize: none;
+
+    background-color: white;
+}
+#chat-text-input-container > button {
+    height: 75%;
+    width: 3.5%;
+
+    margin: 0 1% 0 1%;
+    border-radius: 50%;
+    border: 1px solid black;
+
+    font-size: 20px;
+    background-color: rgb(245, 245, 245);
+}
+
 
 /* Main group info styling */
 #group-info {
-    width: 25%;
+    width: 20%;
     height: 100%;
 
-    /* color for visualize size of container */
-    /*background-color: rgba(146, 249, 145, 0.8);*/
+    margin: 5% 0 0 0;
+    gap: 5%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+#group-info > button {
+    width: 35%;
+    height: 6%;
+    
+    box-shadow: 0px 0px 10px black;
+    border-radius: 15px;
+}
+#group-info-pic {
+    width: 50%;
+    height: 25%;
+
+    border-radius: 50%;
+    border: 2px solid black;
+}
+#group-info-pic > img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+}
+
