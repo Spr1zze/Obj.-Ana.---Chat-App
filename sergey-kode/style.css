@@ -1,31 +1,51 @@
 
+@import "var.css";
 .header{
     position: relative;
-    border:solid black 2px;
-    background-color: seagreen;
-    
+    background-color: var(--kål);
+    height: 10vh;
+    top:0;
 }
 #sidebar-left{
     position: absolute;
     left: 0;
-    height: 95vh;
+  
+    height: 85vh;
     width: 40vh;
-    border: solid teal;
-    background-color: teal;
+    border: solid black 2px;
+    background-color: var(--kål);
 }
 #sidebar-right{
     position: absolute;
     right: 0;
-    height: 95vh;
+    height: 85vh;
     width: 40vh;
-    border: solid teal;
-    background-color: teal;
+    border: solid black 2px;
+    background-color: var(--kål);
 }
 #box{
-    position: absolute;
-    left: 60vh;
+    position: relative;
+    left: 65vh;
     top: 5vh;
-    border: solid red 3px;
+    border: solid black 3px;
     width: 80vh;
-    height: 90vh;
+    height: 80vh;
+    border-radius: 8px;
+ 
+}
+#chat{
+    position: absolute;
+    bottom:0;
+    resize:none;
+    overflow:hidden;
+    padding: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 5vh;
+    height:auto;
+    border-radius: 5px;
+}
+#emoji-icon{
+    float:right;
+    filter: grayscale();
 }
