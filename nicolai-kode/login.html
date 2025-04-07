@@ -10,11 +10,12 @@
 </head>
 <body>
     <div id="container">
-        <button id="test" onclick="login()">press this</button>   
+        <button id="test" onclick="changeUsername(document.getElementById('uname').value)">press this</button>   
         <button id="test" onclick="testFunction()">DONT PRESS THIS</button>   
     </div> 
 
     <script type="module" src="login.js"></script>
     <script type="module" src="script.js"></script>
+    <input type="text" id="uname" name="name" />
 </body>
 </html>
