@@ -1,5 +1,6 @@
 :root{
     --kål: #234d38;
-    
+
     --sd_bc: #1c3d2d;
+    --button:var(--sd_bc);
 }
