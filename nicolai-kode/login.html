@@ -4,18 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
 
     <title>WallSpace - Group Chats</title>
 </head>
 <body>
-    <div id="container">
-        <button id="test" onclick="changeUsername(document.getElementById('uname').value)">press this</button>   
-        <button id="test" onclick="testFunction()">DONT PRESS THIS</button>   
-    </div> 
+
+    <div class = "wrapper">
+        <div class="login">
+            <button id="test" onclick="changeUsername(document.getElementById('uname').value)">Changes the username to the text box</button>   
+            <button id="test2" onclick="changeUsername('')">DONT PRESS THIS</button>   
+            <button id="test3" onclick="replaceText()">Displays the username</button>   
+            <div id = "text_box">EYYO</div>
+
+            
+
+
+            <input type="text" id="uname" name="name" />
+        </div> 
+    </div>
 
     <script type="module" src="login.js"></script>
     <script type="module" src="script.js"></script>
-    <input type="text" id="uname" name="name" />
+    <script type="module">//Debug code stuff
+import { User } from './user.js';
+        function replaceText()
+        {
+        
+        const user = new User("", "Password");
+
+        document.getElementById('text_box').innerHTML = user.getName();
+        }
+
+        window.replaceText = replaceText;
+
+        replaceText()
+    </script>
+
+
+    
+
+
+
 </body>
 </html>
