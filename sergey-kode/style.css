@@ -1,3 +1,31 @@
-.NicolaisBesked {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+
+.header{
+    position: relative;
+    border:solid black 2px;
+    background-color: seagreen;
+    
+}
+#sidebar-left{
+    position: absolute;
+    left: 0;
+    height: 95vh;
+    width: 40vh;
+    border: solid teal;
+    background-color: teal;
+}
+#sidebar-right{
+    position: absolute;
+    right: 0;
+    height: 95vh;
+    width: 40vh;
+    border: solid teal;
+    background-color: teal;
+}
+#box{
+    position: absolute;
+    left: 60vh;
+    top: 5vh;
+    border: solid red 3px;
+    width: 80vh;
+    height: 90vh;
 }
