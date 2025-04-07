@@ -4,15 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="joachim's kode/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="css/style.css">
 
     <title>WallSpace - Group Chats</title>
 </head>
 <body>
-    <div id="container">
-        <button id="test" onclick="testBtn()">press this</button>   
-    </div> 
+    <header class="header">
+        <div id="logo-name">
+            <img src="../assets/images/WallSpace-Logo-Resized.png" alt="Didn't load logo">
+            <p>Your Space. Your Wall.</p>
+        </div>
+        <div id="header-btns">
+            <button>Home</button>
+            <button>Chat</button>
+            <button>Groups</button>
+        </div>
+    </header>
 
-    <script src="joachim's kode/js/script.js"></script>
+    <main>
+        <div id="groups-list">
+            <div id="left-container">
+                <div id="group-and-btn-container">
+                    <p>Groups</p>
+                    <button id="new-group-btn">+</button>
+                </div>
+                <div id="searchbar-container">
+                <textarea id="search-group-input" placeholder="&#128269; Search for group..."></textarea>
+                </div>    
+            </div>
+            <div id="group-list-container">
+                <!-- not entirely sure just yet how to create the list of things
+                Might even be buttons actually ???? -->
+                <p class="groups">Mandag Hygge</p>
+                <p class="groups">Familie</p>
+                <p class="groups">Party when ??</p>
+                <p class="groups">Fødselsdag for mormor</p>
+                <p class="groups">New random things</p>
+                <p class="groups">Go to Rema</p>
+                <p class="groups">Buy a gift</p>
+                <p class="groups">Fødselsdag for mormor</p>
+            </div>
+            <p id="bottom-tag">© 2025 Kata Inc. — Made with &#128153; in Denmark</p>
+        </div>
+
+        <div id="chat">
+            <div id="chat-group-name">
+                <div id="group-title-pic">
+                    <img src="../assets/images/selfie-of-man.png" alt="PB didn't load">
+                </div>
+                <p>this is the group title</p>
+            </div>
+            <div id="chat-room">
+                <p>this is the chat room</p>
+            </div>
+            <div id="chat-text-input-container">
+                <button>&#127909;</button>
+                <button>&#128247;</button>
+                <textarea id="chat-message-box" placeholder="What do you want to say..."></textarea>
+                <button id="emoji-btn">&#128513;</button>
+            </div>
+        </div>
+
+        <div id="group-info">
+            <div id="group-info-pic">
+                <img src="../assets/images/selfie-of-man.png" alt="PB didn't load">
+            </div>
+            <button>Mute Group</button>
+            <button>See Members</button>
+        </div>
+    </main>
+
+    <!-- <footer id="creator-footer">
+        <p>© 2025 Kata Inc. — Made with ❤️ in Denmark</p>
+    </footer> -->
+
+    <script src="js/script.js"></script>
 </body>
 </html>
