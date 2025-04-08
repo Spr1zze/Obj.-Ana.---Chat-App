@@ -3,4 +3,6 @@
 
     --sd_bc: #1c3d2d;
     --button:var(--sd_bc);
+    --text_field:var(--sd_bc);
+    --text_field_tc:var(rgb(255, 253, 187, 255));
 }
