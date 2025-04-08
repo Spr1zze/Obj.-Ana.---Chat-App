@@ -9,12 +9,14 @@ export class User {
             // If data exists, load it from localStorage
             this.user_name = localStorage.getItem("user_name");
             this.user_password = localStorage.getItem("user_password");
+            this.user_id = localStorage.getItem("user_id");
         } else {
             // Otherwise, set the provided user data and save to localStorage
             this.user_name = user_name;
             this.user_password = user_password;
             localStorage.setItem("user_name", user_name);
             localStorage.setItem("user_password", user_password);
+            localStorage.setItem("user_id", this.user_id)
         }
 
         User.instance = this; // Ensure singleton pattern
@@ -24,6 +26,7 @@ export class User {
     {
         localStorage.setItem("user_name", this.user_name);
         localStorage.setItem("user_password", this.user_password);
+        localStorage.setItem("user_id", this.user_id);
     }
 
     getName() {

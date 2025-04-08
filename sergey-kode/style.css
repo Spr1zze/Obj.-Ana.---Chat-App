@@ -4,68 +4,176 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
 .header{
     position: sticky;
     background-color: var(--mørkegrøn);
     height: 10vh;
     width:100vw;
-    z-index: 1;
+    display: flex;
 }
-.logo{
-    
+#logo-container{
+    display: flex;
+    width: 50%;
+}
+#logo{
+    height: 100%;
+}
+#logo-container > h1{
+    padding: 15px 0 0 15px;
+    color: white;
+}
+#header-button-container{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 50%;
+    gap: 3%;
+}
+#header-button-container > button{
+    border-radius: 50%;
+    width: 5%;
+    height: 50%;
+    border: none;
 }
 #sidebar-left{
-    position: absolute;
-    left: 0;
-    height: calc(100vh - 10vh);
-    width: 40vh;
+    height: 100%;
+    width: 20%;
+    border: solid black 3px;
+}
+#groups-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+#groups-container > h1{
+    width: 100%;
+    text-align: center;
+}
+#groups-searchbar{
+    border: solid black 3px;
+    width: 100%;
+    font-size: x-large;
+    border-radius: 5vh;
+    padding: 5px;
+    display: flex;
+}
+
+#add-group-button{
+    border-radius: 50%;
+    width: 8%;
     border: solid black 2px;
-    background-color: var(--mørkegrøn);
+    font-size: x-large;
+}
+
+#groups-container > ul > li > h1{ /* names of groups */
+   border: 1px solid black;
+   text-align: center;
+   width: 40vh;
+   height: 5vh;
+   border-radius: 5vh;
+}
+
+#groups-container > ul, li{
+    list-style-type: none;
+    padding-top: 2%;
 }
 #sidebar-right{
-    position: absolute;
-    right: 0;
-    height: calc(100vh - 10vh);
-    width: 40vh;
-    border: solid black 2px;
-    background-color: var(--mørkegrøn);
-}
-#box{
-    position: relative;
-    left: 65vh;
-    top: 5vh;
+    height: 100%;
+    width: 20%;
     border: solid black 3px;
-    width: 100vh;
-    height: 82vh;
-    border-radius: 8px;
-    overflow: hidden;
+}
+
+
+#chat-container{
+    border-top: solid black 3px;
+    width: 60%;
+    height: 100%;
+    border-bottom: solid black 3px;
 }
 main {
     width: 100dvw;    
     display: flex;
+    height: calc(100vh - 10vh)
 }
-
 #textbox{
-    position: relative;
-    top: 75vh;
     display: flex;
     align-items: center;
-    gap: 10rem;
+    gap: 2rem;
+    border-top: solid black 2px;
+    height: 10%;   
 }
 #chat{
-    width: 70%;
+    width: 100%;
     resize:none;
     padding: 5px;
     box-sizing: border-box;
     min-height: 5vh;
     height:auto;
-    border-radius: 8px;
-
+    border-radius: 15px;
+    padding: 12px 20px 0 20px;
 }
-   
-
-#emoji-icon{
-    float:right;
+#profile-picture{
+    height: 90%;
+    border-radius: 50%;
+    margin: 0.5% 0 0 2% ;
+    width: 6%;
+}
+#person-name-container{
+    height: 10%;
+    display: flex; 
+    width: 100%;
+    border-bottom: 3px solid black;
+}
+#person-name-container > h1{
+    padding: 2%;
+}
+#emoji-button{
     filter: grayscale();
+    font-size: xx-large;
+    border-radius: 50%;
+    margin-right: 3%;
+}
+#emoji-button:hover, #pictures-button:hover, #gifs-button:hover{
+    filter: none;
+}
+#pictures-gifs-container{
+    display: flex;
+    gap: 20%;
+    margin-left: 3%;
+}
+#pictures-button, #gifs-button{
+    border-radius: 50%;
+    border: solid black 2px;
+    font-size: xx-large;
+    filter: grayscale();
+}
+
+#message-container{
+    height: 80%;
+    width: 100%;
+}
+
+
+#person-info-container > img{
+    border-radius: 50%;
+    width: 50%;
+    margin: 15% 0 0 25%;
+}
+#person-info-container > h1{
+    text-align: center;
+}
+#person-button-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    margin-top: 5%;
+    
+}
+#person-button-container > button{
+    width: 50%;
+    border-radius: 5vh;
+    height: 5vh;
+    font-size: large;
 }
