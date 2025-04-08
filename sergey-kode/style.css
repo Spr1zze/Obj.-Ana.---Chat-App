@@ -1,50 +1,70 @@
-
 @import "var.css";
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 .header{
-    position: relative;
-    background-color: var(--kål);
+    position: sticky;
+    background-color: var(--mørkegrøn);
     height: 10vh;
-    top:0;
+    width:100vw;
+    z-index: 1;
+}
+.logo{
+    
 }
 #sidebar-left{
     position: absolute;
     left: 0;
-  
-    height: 85vh;
+    height: calc(100vh - 10vh);
     width: 40vh;
     border: solid black 2px;
-    background-color: var(--kål);
+    background-color: var(--mørkegrøn);
 }
 #sidebar-right{
     position: absolute;
     right: 0;
-    height: 85vh;
+    height: calc(100vh - 10vh);
     width: 40vh;
     border: solid black 2px;
-    background-color: var(--kål);
+    background-color: var(--mørkegrøn);
 }
 #box{
     position: relative;
     left: 65vh;
     top: 5vh;
     border: solid black 3px;
-    width: 80vh;
-    height: 80vh;
+    width: 100vh;
+    height: 82vh;
     border-radius: 8px;
- 
+    overflow: hidden;
+}
+main {
+    width: 100dvw;    
+    display: flex;
+}
+
+#textbox{
+    position: relative;
+    top: 75vh;
+    display: flex;
+    align-items: center;
+    gap: 10rem;
 }
 #chat{
-    position: absolute;
-    bottom:0;
+    width: 70%;
     resize:none;
-    overflow:hidden;
     padding: 5px;
     box-sizing: border-box;
-    width: 100%;
     min-height: 5vh;
     height:auto;
-    border-radius: 5px;
+    border-radius: 8px;
+
 }
+   
+
 #emoji-icon{
     float:right;
     filter: grayscale();
