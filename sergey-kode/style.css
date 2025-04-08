@@ -1,3 +1,51 @@
-.NicolaisBesked {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+
+@import "var.css";
+.header{
+    position: relative;
+    background-color: var(--kål);
+    height: 10vh;
+    top:0;
+}
+#sidebar-left{
+    position: absolute;
+    left: 0;
+  
+    height: 85vh;
+    width: 40vh;
+    border: solid black 2px;
+    background-color: var(--kål);
+}
+#sidebar-right{
+    position: absolute;
+    right: 0;
+    height: 85vh;
+    width: 40vh;
+    border: solid black 2px;
+    background-color: var(--kål);
+}
+#box{
+    position: relative;
+    left: 65vh;
+    top: 5vh;
+    border: solid black 3px;
+    width: 80vh;
+    height: 80vh;
+    border-radius: 8px;
+ 
+}
+#chat{
+    position: absolute;
+    bottom:0;
+    resize:none;
+    overflow:hidden;
+    padding: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 5vh;
+    height:auto;
+    border-radius: 5px;
+}
+#emoji-icon{
+    float:right;
+    filter: grayscale();
 }

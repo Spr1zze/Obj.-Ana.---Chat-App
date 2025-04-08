@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="login.css">
+
+    <title>WallSpace - Group Chats</title>
+</head>
+<body>
+
+    <div class = "wrapper">
+        <div class="login">
+            
+            <div class = "usrName">Username:</div>
+            <input type="text" id="uname" name="username" />
+            <div class = "usrPassword">Password:</div>
+            <input type="text" id="upassword" name="password" />
+            <br>
+            <button class="loginButton" onclick="">login</button>
+
+            
+        </div> 
+    </div>
+
+    <script type="module" src="login.js"></script>
+    <script type="module" src="script.js"></script>
+    <script type="module">//Debug code stuff
+import { User } from './user.js';
+        function replaceText()
+        {
+        
+        const user = new User("", "Password");
+
+        document.getElementById('text_box').innerHTML = user.getName();
+        }
+
+        window.replaceText = replaceText;
+
+        replaceText()
+    </script>
+
+
+    
+
+
+
+</body>
+</html>
