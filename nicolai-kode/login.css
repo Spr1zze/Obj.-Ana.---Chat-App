@@ -18,7 +18,7 @@
     width: 100vw;
     height: 80vh;
     margin-top: 5vh;
-    background-color: var(--kål);
+    background-color: var(--main_col);
 }
 
 h1 {

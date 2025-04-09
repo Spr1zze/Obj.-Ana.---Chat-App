@@ -3,7 +3,7 @@
     --mørkeblå: #160b7a;
     
     
-
+    --main_col:var(--mørkegrøn);
     --sd_bc: #1c3d2d;
     --button:var(--sd_bc);
     --text_field:var(--sd_bc);
